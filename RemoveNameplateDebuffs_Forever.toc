@@ -1,5 +1,5 @@
 ## Interface: 16001
-## X-Wago-ID: 96d05O6O0
+## X-Wago-ID: 96d05O6O
 ## Version: v3.3.7-forever.2
 ## RequiredDeps: RGX-Framework
 ## Title: |cffff7d00R|r|cffffffffemove|r |cffff7d00N|r|cffffffffameplate|r |cffff7d00D|r|cffffffffebuffs|r|cffff7d00!|r |cffFFD700(Forever)|r
