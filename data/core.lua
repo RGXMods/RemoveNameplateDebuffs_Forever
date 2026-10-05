@@ -593,6 +593,12 @@ RGX:RegisterEvent("PLAYER_LOGIN", function()
         RND:InitializeSettings()
         RND.initialized = true
     end
+    -- Disabled state must never leave stale hidden frames behind: plates that
+    -- were suppressed while enabled get their alpha/visibility restored on
+    -- login, instead of waiting for the client to rebuild them.
+    if not RND:GetSetting("enabled") then
+        RND:RestoreAllNameplateDebuffs()
+    end
     if RND.settingsRestoredFromBackup then
         RND.settingsRestoredFromBackup = nil
         if RND.L then
