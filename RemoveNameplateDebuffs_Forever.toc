@@ -1,6 +1,6 @@
 ## Interface: 16001
 ## X-Wago-ID: 96d05O6O
-## Version: v3.3.7-forever.2
+## Version: v3.3.7-forever.3
 ## RequiredDeps: RGX-Framework
 ## Title: |cffff7d00R|r|cffffffffemove|r |cffff7d00N|r|cffffffffameplate|r |cffff7d00D|r|cffffffffebuffs|r|cffff7d00!|r |cffFFD700(Forever)|r
 ## Notes: WoW Forever (project Camelot) flavor. Remove Debuff Icons from Enemy Nameplates|n|r   |cffff7d00By DonnieDice|r
@@ -23,3 +23,4 @@
 
 data\locales.lua
 data\core.lua
+data\options.lua

@@ -10,7 +10,7 @@
 RND = RND or {}
 
 -- Constants (cached for performance)
-local ADDON_VERSION = "3.3.7-forever.2"
+local ADDON_VERSION = "3.3.7-forever.3"
 local ADDON_NAME = "RemoveNameplateDebuffs_Forever"
 -- NOTE: flavor variants must use flavor-specific SavedVariables so multiple
 -- installed variants never clobber each other on a shared WTF.
@@ -434,6 +434,12 @@ function RND:HandleSlashCommand(args)
 
 	if command == "" or command == "help" then
 		self:ShowHelp()
+	elseif command == "options" then
+		if RND.panel then
+			RND.panel:Open()
+		else
+			self:ShowHelp()
+		end
 	elseif command == "on" or command == "enable" then
 		self:SetSetting("enabled", true)
 		self:HideAllNameplateDebuffs()
@@ -472,6 +478,7 @@ function RND:ShowHelp()
 	end
 
 	print(CHAT_PREFIX .. " " .. self.L["HELP_HEADER"])
+	print(CHAT_PREFIX .. " |cffffffff/rnd options|r - Open the options panel")
 	print(CHAT_PREFIX .. " " .. self.L["HELP_TEST"])
 	print(CHAT_PREFIX .. " " .. (self.L["HELP_ENABLE"] or "|cffffffff/rnd enable|r - Enable addon"))
 	print(CHAT_PREFIX .. " " .. (self.L["HELP_DISABLE"] or "|cffffffff/rnd disable|r - Disable addon"))
