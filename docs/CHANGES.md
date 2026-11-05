@@ -1,3 +1,8 @@
+## v3.3.7-forever.5 - 2026-11-05
+
+- Releases are now built with our own packager and published to CurseForge, Wago and GitHub (and WoWInterface where a listing exists).
+- No gameplay changes.
+
 # v3.3.7-forever.3 - 2026-10-06
 
 ## Changes
